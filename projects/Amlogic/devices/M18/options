@@ -1,0 +1,14 @@
+  # Kernel target
+    KERNEL_TARGET="Image.lzo"
+
+  # Kernel extra targets to build
+    KERNEL_UBOOT_EXTRA_TARGET="gxbb_p200_2G.dtb"
+
+  # Build Android kernel image using mkbootimg
+    BUILD_ANDROID_BOOTIMG="yes"
+
+  # Path to a file that will be passed as the --second parameter to Android mkbootimg
+    ANDROID_BOOTIMG_SECOND="arch/arm64/boot/dts/amlogic/gxbb_p200_2G.dtb"
+
+  # Additional options that will be passed to Android mkbootimg
+    ANDROID_BOOTIMG_OPTIONS="--base 0x0 --kernel_offset 0x1080000"
